@@ -4,7 +4,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
+.mypy_cache/
 .ipynb_checkpoints/
+.coverage
+htmlcov/
 build/
 dist/
 *.egg-info/
@@ -13,6 +16,7 @@ dist/
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
 
 # 데이터 / 학습 결과
 /dataset/
@@ -21,3 +25,28 @@ dist/
 *.pth
 *.onnx
 *.engine
+*.ckpt
+*.safetensors
+/checkpoints/
+/outputs/
+/wandb/
+
+# Download state / runtime files (keep locally for resuming)
+*.part
+*.part.*
+*.chunks/
+*.extracting
+.download.lock
+*.log
+*.pid
+
+# Temporary browser recordings; demo/viewer.gif is versioned
+/test-results/
+/playwright-report/
+/demo/frames/
+/demo/*.webm
+/demo/*.mp4
+
+# OS files
+.DS_Store
+Thumbs.db

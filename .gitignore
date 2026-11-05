@@ -1,0 +1,23 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+
+# 비밀 환경변수
+.env
+.env.*
+!.env.example
+
+# 데이터 / 학습 결과
+/dataset/
+/runs/
+*.pt
+*.pth
+*.onnx
+*.engine
